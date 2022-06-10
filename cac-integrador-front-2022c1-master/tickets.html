@@ -74,6 +74,7 @@
     </div>
 
     <br>
+    <form>
     <div class="container">
         <div class="row justify-content-center align-content-center">
             <div class="col-md-5">
@@ -90,6 +91,7 @@
                 <input type="text" class="form-control" placeholder="Correo" name="Correo">
             </div>
         </div>
+    </form>
 
         <br>
 
@@ -112,11 +114,18 @@
         <br>
         <br>
         <div class="row justify-content-center align-content-center">
+            <div class="col-10">
+                <input type="text" class="form-control" placeholder="Total a pagar:" name="Pago">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row justify-content-center align-content-center">
             <div class="col-5">
-                <button type="button" class="btn btn-danger w-100">Danger</button>
+                <button type="button" class="btn btn-danger w-100">Borrar</button>
             </div>
             <div class="col-5">
-            <button type="button" class="btn btn-success w-100">Success</button>
+            <button type="button" class="btn btn-success w-100" onclick="Resumen">Resumen</button>
             </div>
         </div>
     </div>
@@ -138,7 +147,7 @@
         </footer>
     </div>
 
-
+ <script src="./js/logica.js"></script>
 </body>
 
 </html>
