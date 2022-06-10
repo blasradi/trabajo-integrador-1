@@ -1,18 +1,25 @@
-  let cantidad = parseInt(prompt("¿cuántas entradas quiere?"));
-  categoria= prompt("¿qué tipo de entrada quiere?")
+  function Resumen (){
+    let cantidad=document.getElementById("cantidad").value; 
+    let categoria=document.getElementById("categoria").value;
+    console.log(cantidad);
+    console.log(categoria);
+    if (categoria=="Selecciona una categoría"){
+        alert("Indique qué tipo de entradas quiere comprar")
+        document.getElementById(categoria).focus();
+    }
+    if (cantidad<=0){
+        alert("Indique cuántas entradas quiere comprar")
+        document.getElementById(cantidad).focus();  
+    }
 
-  switch (categoria) {
-      case "estudiante":
-          console.log("El precio es " + (200 * 0.2 * cantidad));
+    switch (categoria) {
+      case "Estudiante":
+        document.getElementById("total").innerHTML =("Total a pagar " + (200 * 0.2 * cantidad) + "$");
           break;
-      case "trainee":
-          console.log("El precio es " + (200 * 0.5 * cantidad));
+      case "Trainee":
+        document.getElementById("total").innerHTML =("Total a pagar " + (200 * 0.5 * cantidad) + "$");
           break;
-      case "junior":
-          console.log("El precio es " + (200 * 0.85 * cantidad));
+      case "Junior":
+        document.getElementById("total").innerHTML =("Total a pagar " + (200 * 0.85 * cantidad) + "$");
   }
-
-
-
-  
-
+}

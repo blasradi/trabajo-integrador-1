@@ -75,59 +75,61 @@
 
     <br>
     <form>
-    <div class="container">
-        <div class="row justify-content-center align-content-center">
-            <div class="col-md-5">
-                <input type="nombre" class="form-control" placeholder="Nombre" name="Nombre">
-            </div>
+        <div class="container">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-md-5">
+                    <input type="nombre" class="form-control" placeholder="Nombre" name="Nombre">
+                </div>
 
-            <div class="col-md-5">
-                <input type="text" class="form-control" placeholder="Apellido" name="Apellido">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Apellido" name="Apellido">
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="row justify-content-center align-content-center">
-            <div class="col-10">
-                <input type="text" class="form-control" placeholder="Correo" name="Correo">
+            <br>
+            <div class="row justify-content-center align-content-center">
+                <div class="col-10">
+                    <input type="text" class="form-control" placeholder="Correo" name="Correo">
+                </div>
             </div>
-        </div>
     </form>
 
-        <br>
+    <br>
 
-        <div class="row justify-content-center align-content-center">
-            <div class="col-md-5">
-                <label class="form-label-1" for="Cantidad">Cantidad</label>
-                <input id="cantidad" class="form-control"name="Cantidad" type="number">
-            </div>
+    <div class="row justify-content-center align-content-center">
+        <div class="col-md-5">
+            <label class="form-label-1" for="Cantidad">Cantidad</label>
+            <input class="form-control" name="Cantidad" type="number" id="cantidad">
+        </div>
 
-            <div class="col-md-5">
-                <label class="form-label-1" for="Categoria">Categoría</label>
-                <select class="form-select">
-                    <option selected="" disabled="">Selecciona una categoría</option>
-                    <option value="Estudiante">Estudiante</option>
-                    <option value="Trainee">Trainee</option>
-                    <option value="Junior">Junior</option>
-                </select>
+        <div class="col-md-5">
+            <label class="form-label-1" for="categoria">Categoría</label>
+            <select class="form-select" id="categoria">
+                <option selected="" disabled="">Selecciona una categoría</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row justify-content-center align-content-center">
+        <div class="col-10">
+            <div class="alert alert-primary" role="alert">
+                <p id="total"> Total a pagar: $ </p>
             </div>
         </div>
-        <br>
-        <br>
-        <div class="row justify-content-center align-content-center">
-            <div class="col-10">
-                <input type="text" class="form-control" placeholder="Total a pagar:" name="Pago">
-            </div>
+    </div>
+    <br>
+    <br>
+    <div class="row justify-content-center align-content-center">
+        <div class="col-5">
+            <button type="button" class="btn btn-danger w-100">Borrar</button>
         </div>
-        <br>
-        <br>
-        <div class="row justify-content-center align-content-center">
-            <div class="col-5">
-                <button type="button" class="btn btn-danger w-100">Borrar</button>
-            </div>
-            <div class="col-5">
-            <button type="button" class="btn btn-success w-100" onclick="Resumen">Resumen</button>
-            </div>
+        <div class="col-5">
+            <button type="button" class="btn btn-success w-100" onclick="Resumen()">Resumen</button>
         </div>
+    </div>
     </div>
     </div>
     </div>
@@ -147,7 +149,7 @@
         </footer>
     </div>
 
- <script src="./js/logica.js"></script>
+    <script src="./js/logica.js"></script>
 </body>
 
 </html>
